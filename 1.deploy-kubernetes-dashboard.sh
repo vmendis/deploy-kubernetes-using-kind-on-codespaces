@@ -4,6 +4,6 @@ kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.6.1/a
 
 # Create a simple user for dashboard
 # Referenece : https://github.com/kubernetes/dashboard/blob/master/docs/user/access-control/creating-sample-user.md
-
+echo "Creating a service user ..."
 kubectl apply -f Tools/dashboard-adminuser.yaml
 
