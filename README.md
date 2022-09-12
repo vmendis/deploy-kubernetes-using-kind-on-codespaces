@@ -9,6 +9,8 @@ It is possible to use virtual machines (VM) from Azure or AWS for these type of 
 
 <add more notes in here>
 
+Add notes about building an ubuntu docker image with docker and pusing it into dockerhub and using it. using alpine was quikcer compared to building the ubuntu image.....
+
 A Kind kubernetes cluster with multiple Master nodes will not survive a VM shutdown and re-start. See https://github.com/kubernetes-sigs/kind/issues/1689
 
 
@@ -28,7 +30,10 @@ This is for demostration purposes only. It is not recommended to run Kubernetes 
 
 Warning: The sample user created in the tutorial will have administrative privileges and is for educational purposes only.
 
-$ ./1.deploy-kubernetes-dashboard.sh
+$ ./1.deploy-kubernetes-dashboard.
+
+$ kubectl -n kubernetes-dashboard create token admin-user
+
 $ kubectl proxy
 "Your application running on port 8001 is available....." message pops up. Also, "PORTS" tab on the screen get highlited.
 
