@@ -9,10 +9,12 @@ It is possible to use virtual machines (VM) from Azure or AWS for these type of 
 
 <add more notes in here>
 
-A Kind kubernetes cluster with multiple Master nodes will not survive a VM shutdown and re-start. See 
+A Kind kubernetes cluster with multiple Master nodes will not survive a VM shutdown and re-start. See https://github.com/kubernetes-sigs/kind/issues/1689
+
+
 Steps.
 
-Blah..blah about cloing this repo 
+Add notes in here .... about using the code given in this repo
 
 1. $ ./0.deploy-kind-cluster.sh
 
@@ -23,6 +25,8 @@ $ kubectl  --context kind-kind get all,cm,secret,ing -A
 
 2. Deploy Kubernetes dashboard.
 This is for demostration purposes only. It is not recommended to run Kubernetes Dashboard in Production.
+
+Warning: The sample user created in the tutorial will have administrative privileges and is for educational purposes only.
 
 $ ./1.deploy-kubernetes-dashboard.sh
 $ kubectl proxy

@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 kind create cluster --config Kind/config.yaml
 kind get clusters
 kubectl --context kind-kind cluster-info
