@@ -13,6 +13,12 @@
       "terminal.integrated.shell.linux": "/bin/bash"
     },
   
+    "features": {
+      "ghcr.io/devcontainers/features/sshd:1": {
+          "version": "latest"
+      }
+  }
+
     // Add the IDs of extensions you want installed when the container is created.
     // "extensions": [
     //   "dbaeumer.vscode-eslint"
