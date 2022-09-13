@@ -7,7 +7,8 @@ to do other interesting small projects !
 
 It is possible to use virtual machines (VM) from Azure or AWS for these type of hacks. But one must login to Azure or AWS and create the VMs. Here we get one-click enviornment for experementing. The beauty with codespace is, if you screw-up your VM, just delete and re-create a new one. takes only a few minutes.
 
-<add more notes in here>
+As of 13.Sep.2022, I am on the Codespace Beta program. Hence I am not paying for the Codespaces I create. Beaware the costs associated running codespaces before trying the steps given in here.
+
 
 Add notes about building an ubuntu docker image with docker and pusing it into dockerhub and using it. using alpine was quikcer compared to building the ubuntu image.....
 
@@ -57,5 +58,13 @@ https://deploy-kubernetes-using-kind-on-000x0xxxxxxf0000-8001.githubpreview.dev/
 
 
 
+Resources I used bulding this repo :
 
+1. Insperation for this project.
+https://www.youtube.com/watch?v=hh2K5XCN6Nk - Running a Kubernetes cluster in GitHub CodeSpaces | an Introduction
 
+2. Used notes from this page on installing Docker inside an Ubuntu Docker image.
+https://community.datastax.com/questions/5369/how-do-i-setup-kind-on-ubuntu-to-run-the-kubernete.html
+
+3. Installing Kubernetes Dashboard.
+https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/
