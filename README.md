@@ -68,3 +68,10 @@ https://community.datastax.com/questions/5369/how-do-i-setup-kind-on-ubuntu-to-r
 
 3. Installing Kubernetes Dashboard.
 https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/
+
+4. GitHub Codespaces
+https://docs.github.com/en/codespaces
+
+5. Using GitHub CLI to ssh into codespace.
+https://cli.github.com/manual/gh_codespace_ssh
+
