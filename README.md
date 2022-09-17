@@ -10,7 +10,23 @@ It is possible to use virtual machines (VM) from Azure or AWS for these type of 
 As of 13.Sep.2022, I am on the Codespace Beta program. Hence I am not paying for the Codespaces I create. Beaware the costs associated running codespaces before trying the steps given in here.
 
 
-Add notes about building an ubuntu docker image with docker and pusing it into dockerhub and using it. using alpine was quikcer compared to building the ubuntu image.....
+Halfway through this project I switched to using Ubuntu from Alpine. 
+
+Observations :
+
+i. Building the Ubuntu image with the required tools was loslower swer compared to Alpine.
+This can be speed up by building an ubuntu docker image with docker and pusing it into dockerhub and using it.
+
+ii. It was easy to enable SSHD on the Ubuntu based Codespace. This can be achived by adding a features section into the devcontainer.json
+ "features": {
+      "ghcr.io/devcontainers/features/sshd:1": {
+          "version": "latest"
+
+
+iii. After installing Prometheus related tools the load average of the Ubuntu based container went realy high. Becuase of load issues I switched back to using Alpine.
+
+
+
 
 A Kind kubernetes cluster with multiple Master nodes will not survive a VM shutdown and re-start. See https://github.com/kubernetes-sigs/kind/issues/1689
 
@@ -74,4 +90,6 @@ https://docs.github.com/en/codespaces
 
 5. Using GitHub CLI to ssh into codespace.
 https://cli.github.com/manual/gh_codespace_ssh
+
+
 
