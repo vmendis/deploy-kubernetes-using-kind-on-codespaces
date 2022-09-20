@@ -2,7 +2,7 @@
 Notes on Deploying a kuberntes cluster using kind on Github Codespaces.
 WIP. Notes are not completed as of 10.Sep.2022 !!!
 
-Github Codespaces gives a cloud based development enviornment which can be hacked
+Github Codespaces gives a cloud based development enviornment which can be hacked 
 to do other interesting small projects !
 
 It is possible to use virtual machines (VM) from Azure or AWS for these type of hacks. But one must login to Azure or AWS and create the VMs. Here we get one-click enviornment for experementing. The beauty with codespace is, if you screw-up your VM, just delete and re-create a new one. takes only a few minutes.
@@ -72,8 +72,25 @@ final url must look like this :
 
 https://deploy-kubernetes-using-kind-on-000x0xxxxxxf0000-8001.githubpreview.dev/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy
 
+3. Deploy Proemetheus and friends.
+
+The Manifests in this repo is from Release v0.11.0
+https://github.com/prometheus-operator/kube-prometheus
+
+Grafana version : 9.1.4
+Issues I came across: 
+
+"Origin Not Allowed" error/warning
+
+a. https://github.com/grafana/grafana/issues/45117#issuecomment-1033842787
+b. https://community.grafana.com/t/after-update-to-8-3-5-origin-not-allowed-behind-proxy/60598
+
+Workaround (Not recommended in Production) : Change image to be 8.3.3
+           image: grafana/grafana:8.3.3
+           
 
 
+======================================================
 Resources I used bulding this repo :
 
 1. Insperation for this project.
@@ -91,5 +108,6 @@ https://docs.github.com/en/codespaces
 5. Using GitHub CLI to ssh into codespace.
 https://cli.github.com/manual/gh_codespace_ssh
 
-
+6. How to install and set up OpenSSH (SSHD) server and client on the Alpine Linux system
+https://www.cyberciti.biz/faq/how-to-install-openssh-server-on-alpine-linux-including-docker/
 
