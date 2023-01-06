@@ -111,3 +111,13 @@ https://cli.github.com/manual/gh_codespace_ssh
 6. How to install and set up OpenSSH (SSHD) server and client on the Alpine Linux system
 https://www.cyberciti.biz/faq/how-to-install-openssh-server-on-alpine-linux-including-docker/
 
+====
+ChangeLog
+
+6.Jan.2022
+
+Added code to .devcontainer/dockerfile to :
+  
+  o Install bash-completion package on Alpine Linux     //https://www.cyberciti.biz/faq/alpine-linux-enable-bash-command-autocomplete/
+  o Kubectl and 'k' autocomplete.
+

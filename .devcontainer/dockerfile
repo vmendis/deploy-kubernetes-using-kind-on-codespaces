@@ -13,4 +13,9 @@ RUN curl -L https://github.com/kubernetes-sigs/kind/releases/download/v${KIND_VE
 
 RUN apk add bash && \
     apk add git && \
-    touch /root/.bashrc
+    apk add bash-completion && \
+    touch /root/.bashrc && \
+    echo "source /etc/profile.d/bash_completion.sh" >> /root/.bashrc && \
+    echo "source <(kubectl completion bash)" >> /root/.bashrc && \
+    echo "alias k=kubectl " >> /root/.bashrc && \ 
+    echo "complete -o default -F __start_kubectl k" >> /root/.bashrc
