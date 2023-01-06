@@ -51,6 +51,8 @@ $ ./1.deploy-kubernetes-dashboard.
 
 $ kubectl -n kubernetes-dashboard create token admin-user
 
+NOTE: This generates a token and we require this token to login to the Kubernetes ashboard.
+
 $ kubectl proxy
 "Your application running on port 8001 is available....." message pops up. Also, "PORTS" tab on the screen get highlited.
 
@@ -71,6 +73,10 @@ to the end of it. The
 final url must look like this :
 
 https://deploy-kubernetes-using-kind-on-000x0xxxxxxf0000-8001.githubpreview.dev/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy
+
+Select the method "Token" to authenticate
+
+Copy/Paste the token 
 
 3. Deploy Proemetheus and friends.
 
