@@ -125,6 +125,7 @@ ChangeLog
 Added code to .devcontainer/dockerfile to :
   
   o Install bash-completion package on Alpine Linux     //https://www.cyberciti.biz/faq/alpine-linux-enable-bash-command-autocomplete/
-  o autocomplete kubecl and 'k'
   
+  o autocomplete kubecl and 'k'
+
 
